@@ -1,5 +1,9 @@
-[![](https://jitpack.io/v/etidoUP/Dependency-Haven.svg)](https://jitpack.io/#etidoUP/Dependency-Haven)
 #Dependency Haven
+
+<p align="center">
+  [![](https://jitpack.io/v/etidoUP/Dependency-Haven.svg)](https://jitpack.io/#etidoUP/Dependency-Haven)
+</p>
+
 Dependency Haven is a powerful and easy-to-use dependency management tool for java and Android projects. Simplify the management of your project dependencies with this open-source library.
 
 ## Features
@@ -21,12 +25,12 @@ Getting started.
 1. Add the following in your root build.gradle at the end of repositories
  ```gradle
 dependencyResolutionManagement {
-		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-		repositories {
-			mavenCentral()
-			maven { url 'https://jitpack.io' }
-		}
-	}
+     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+     repositories {
+          mavenCentral()
+          maven { url 'https://jitpack.io' }
+     }
+}
 ```
 2. Add the following dependency to your project's `build.gradle` file:
 
