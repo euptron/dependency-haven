@@ -36,7 +36,7 @@ dependencyResolutionManagement {
 
 ```gradle
 dependencies {
-    implementation 'com.github.etidoUP:Dependency-Haven:v0.1.0-alpha'
+    implementation 'com.github.etidoUP:dependency-haven:0.1.0-alpha'
 }
 ```
 
