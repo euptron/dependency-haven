@@ -1,0 +1,54 @@
+
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace project.ext.appNameSpace
+    compileSdk project.ext.compileSdkVersion
+    buildToolsVersion project.ext.buildToolsVersion
+
+    defaultConfig {
+        applicationId project.ext.applicationId
+        minSdk project.ext.minSdkVersion
+        targetSdk project.ext.targetSdkVersion
+        versionCode project.ext.appVersionCode
+        versionName project.ext.appVersionName
+        
+        vectorDrawables { 
+            useSupportLibrary true
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+}
+configurations.implementation {
+    exclude group: "org.jetbrains", module: "annotations"
+    exclude group: "com.google.guava", module: "listenablefuture"
+}
+dependencies {
+    // Androidx & Material
+    implementation google.material
+    implementation androidx.appcompat
+    implementation androidx.constraintlayout
+    implementation androidx.preference
+    implementation other.r8
+    implementation other.sdk_lib
+    implementation other.commons
+    // Modules
+    implementation project(path: ":haven")
+}

@@ -1,0 +1,12 @@
+<resources>
+
+    <style name="AppTheme.MaterialSwitchPreference" parent="Preference.SwitchPreference.Material">
+        <item name="android:widgetLayout">@layout/layout_material_switch</item>
+    </style>
+
+    <style name="Navigation.Rail.Logo.ShapeAppearance" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/dimen25dp</item>
+    </style>
+
+</resources>

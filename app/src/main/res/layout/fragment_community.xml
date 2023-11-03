@@ -1,0 +1,94 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="?android:attr/selectableItemBackground"
+        android:baselineAligned="false"
+        android:clipToPadding="false"
+        android:gravity="center_vertical"
+        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+        android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+        android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"
+        android:paddingRight="?android:attr/listPreferredItemPaddingRight"
+        android:paddingStart="?android:attr/listPreferredItemPaddingStart" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp" >
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@android:id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="@string/tk_community"
+                android:textAppearance="?android:attr/textAppearanceListItem" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@android:id/summary"
+                style="@style/PreferenceSummaryTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@android:id/title"
+                android:layout_alignStart="@android:id/title"
+                android:layout_below="@android:id/title"
+                android:layout_gravity="start"
+                android:maxLines="10"
+                android:text="@string/tk_com_msg"
+                android:textAlignment="viewStart"
+                android:textColor="?android:attr/textColorSecondary" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/blogger_button"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_bar"
+        android:text="@string/tk_com_blog"
+        app:icon="@drawable/ic_blogger"
+        app:iconSize="22dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/telegram_group_button"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/blogger_button"
+        android:text="@string/tk_com_telegram_group"
+        app:icon="@drawable/ic_telegram"
+        app:iconSize="22dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/telegram_channel_button"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/telegram_group_button"
+        android:text="@string/tk_com_telegram_channel"
+        app:icon="@drawable/ic_telegram"
+        app:iconSize="22dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

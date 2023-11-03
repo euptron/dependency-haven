@@ -1,0 +1,11 @@
+<resources>
+
+    <!-- Text -->
+    <dimen name="alertIconDimen">8dp</dimen>
+    <dimen name="dimen14sp">14sp</dimen>
+    <dimen name="dimen24dp">24dp</dimen>
+    <dimen name="dimen22dp">22dp</dimen>
+    <dimen name="dimen25dp">25dp</dimen>
+    <dimen name="dimen5dp">5dp</dimen>
+    <dimen name="dimen50dp">50dp</dimen>
+</resources>

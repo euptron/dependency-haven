@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Array for theme selection -->
+    <string-array name="theme">
+        <item>@string/theme_auto</item>
+        <item>@string/theme_light</item>
+        <item>@string/theme_dark</item>
+    </string-array>
+    <string-array name="theme_values">
+        <item>3</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+</resources>

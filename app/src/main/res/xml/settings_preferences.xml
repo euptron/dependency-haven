@@ -1,0 +1,14 @@
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="@string/pref_general_config_interface_title">
+        <Preference app:iconSpaceReserved="false" app:title="@string/settings" />
+
+        <ListPreference android:defaultValue="3" android:dialogTitle="@string/dialog_config_theme_title" android:entries="@array/theme" android:entryValues="@array/theme_values" app:iconSpaceReserved="false" app:key="pref_app_theme" app:title="@string/pref_general_config_list_preference_title" app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreferenceCompat android:defaultValue="false" app:iconSpaceReserved="false" app:key="pref_dynamic_colours" app:summary="@string/pref_general_config_switch_pref_summ" app:title="@string/pref_general_config_switch_pref_title" />
+    </PreferenceCategory>
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="@string/pref_general_library_manager">
+        <Preference app:iconSpaceReserved="false" app:key="pref_library_manager" app:title="@string/pref_download_directory" />
+    </PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

@@ -1,0 +1,65 @@
+<resources>
+
+    <string name="app_name">Thoren Koder</string>
+    <!-- Settings -->
+    <string name="pref_download_dir_not_set">No download directory has been set</string>
+    <string name="pref_general_config_interface_title">Interface</string>
+    <string name="pref_general_library_manager">Dependency Haven</string>
+    <string name="pref_general_config_list_preference_title">Theme</string>
+    <string name="pref_general_config_switch_pref_title">Material you</string>
+    <string name="pref_general_config_switch_pref_summ">Follow the dynamic material theme of your device</string>
+    <string name="pref_download_directory">Download directory</string>
+    <!-- Theme -->
+    <string name="theme_auto">Auto</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <!-- Others -->
+	<string name="exit">Exit</string>
+    <string name="dependency">Dependency</string>
+    <string name="til_dependency_hint">Example: org.tomlj:tomlj:1.0.0</string>
+    <string name="download">Download</string>
+    <string name="skip_sub_dependencies">Skip inner dependencies</string>
+    <string name="msg_share_error">Share error message</string>
+    <string name="msg_error_format">Detailed error message</string>
+    <string name="msg_error_while_collecting_error">An error while getting error</string>
+    <string name="msg_app_crashed">App Crashed</string>
+    <string name="msg_app_crashed_error">An error occurred</string>
+    <string name="share">Share error</string>
+    <string name="request_again">Request again</string>
+    <string name="delete">Delete</string>
+    <string name="restart">Restart</string>
+    <string name="cancel">Cancel</string>
+    <string name="pick_folder">Select Folder</string>
+    <string name="dialog_config_theme_title">Choose theme</string>
+    <string name="copied_to_clipboard">Copied to clip board</string>
+    <!-- Fragment pages -->
+    <string name="welcome">Welcome</string>
+    <string name="dependency_manager">Dependency Manager</string>
+    <string name="dependency_manager_desc">An ultra fast dependency manager for Sketchware Pro</string>
+    <string name="sketchware_extension">Sketchware Extension</string>
+    <string name="community">Community</string>
+    <string name="notification">Notification</string>
+    <string name="settings">Settings</string>
+    <!-- community channel -->
+    <string name="msg_title_yt">Visit Our Channel</string>
+    <string name="msg_yt_body">Explore our YouTube channel for informative and engaging content</string>
+    <string name="dialog_yt_positive_botton">Visit channel</string>
+    <string name="dialog_yt_negative_botton">Not Now</string>
+    <string name="tk_community">Thoren Koder community</string>
+    <string name="tk_com_telegram_channel">Telegram Channel</string>
+    <string name="tk_com_blog">Blogger</string>
+    <string name="tk_com_msg">Discover, Create, Share</string>
+    <string name="tk_com_telegram_group">Telegram group</string>
+    <!-- Storage Permission -->
+    <string name="storage_permission_continue">Continue</string>
+    <string name="storage_permission_cancel">@string/cancel</string>
+    <string name="storage_permission_denied">Storage permission denied!</string>
+    <string name="storage_permission_request_again">@string/request_again</string>
+    <string name="storage_permission_denial_prompt">This application needs storage premission to download and manage libraries files</string>
+    <string name="delete_file_title">@string/delete</string>
+    <string name="delete_file_message">Do you want to delete\n `%s?`</string>
+    <string name="delete_folder_message">Do you want to delete\n `%s` and it\'s contents?</string>
+    <string name="select_download_dir_title">Choose a download folder</string>
+    <string name="select_download_dir_msg">Choose a folder to store the downloaded Sketchware Pro\'s libraries</string>
+
+</resources>
