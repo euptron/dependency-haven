@@ -299,6 +299,8 @@ public class MainFragment extends Fragment {
     }
   }
 
+
+  @SuppressLint("NewApi")
   public static boolean isPermissionGranted(Context context) {
     if (SDKUtil.isAtLeast(API.ANDROID_11)) {
       return Environment.isExternalStorageManager();
