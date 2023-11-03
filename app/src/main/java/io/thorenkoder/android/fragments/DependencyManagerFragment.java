@@ -152,7 +152,7 @@ public class DependencyManagerFragment extends Fragment
     model
         .getLogs()
         .observe(
-            this,
+            getViewLifecycleOwner(),
             data -> {
               logAdapter.submitList(data);
               scrollToLastItem();
