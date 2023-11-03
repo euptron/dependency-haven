@@ -20,4 +20,9 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
+# Fixes r8 compilation error
+-dontwarn org.xmlpull.v1.**
+-dontwarn org.kxml2.io.**
+-dontwarn android.content.res.**
 -keep class org.xmlpull.** { *; }
+-keepclassmembers class org.xmlpull.** { *; }
