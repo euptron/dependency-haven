@@ -70,4 +70,4 @@ SOFTWARE.
 ```
 ## Acknowledgements
 
-Special thanks to [Tyron](https://github.com/tyron12233) for providing a free and open-source POM parsing class.
+Special thanks to [Tyron](https://github.com/tyron12233) for POM parsing class.
