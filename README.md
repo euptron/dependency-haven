@@ -40,6 +40,9 @@ dependencies {
 }
 ```
 
+## Documentation
+
+Review the [documentation](https://github.com/etidoUP/dependency-haven/wiki) for `dependency-haven`
 ## License
 
 ```
