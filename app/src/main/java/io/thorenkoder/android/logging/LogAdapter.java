@@ -3,6 +3,7 @@ package io.thorenkoder.android.logging;
 import android.content.Context;
 import android.view.ViewGroup;
 import android.view.View;
+import androidx.annotation.NonNull;
 import android.widget.TextView;
 import android.widget.FrameLayout;
 import androidx.recyclerview.widget.RecyclerView;
