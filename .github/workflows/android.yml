@@ -29,3 +29,11 @@ jobs:
       with:
           name: app-debug
           path: app/build/outputs/apk/debug/app-debug.apk
+
+    - name: Build release APK
+      run: ./gradlew assembleRelease
+   
+    - uses: actions/upload-artifact@master
+      with:
+          name: app-release-apk
+          path: app/build/outputs/apk/release/app-release.apk
