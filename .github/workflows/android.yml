@@ -2,19 +2,18 @@ name: Android CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v3
 
-    - name: set up JDK 17
+    - name: Set up JDK 17
       uses: actions/setup-java@v3
       with:
         java-version: '17'
@@ -23,25 +22,46 @@ jobs:
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
-    
-    
+
     # Build release APK
     - name: Build release APK
       run: ./gradlew assembleRelease
 
-    # Upload release APK
+    # Upload release APK as an artifact
     - uses: actions/upload-artifact@v3
       with:
         name: app-release-apk
         path: app/build/outputs/apk/release/app-release.apk
-    
-    
+
     # Build debug APK
     - name: Build debug APK
       run: ./gradlew assembleDebug
 
-    # Upload debug APK
+    # Upload debug APK as an artifact
     - uses: actions/upload-artifact@v3
       with:
         name: app-debug
         path: app/build/outputs/apk/debug/app-debug.apk
+
+    # Create GitHub Release
+    - name: Create GitHub Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: 'v1.0.0'  # Adjust the version/tag as needed
+        release_name: 'Release v1.0.0'
+        draft: false
+        prerelease: false
+
+    # Upload Release APK to GitHub Release
+    - name: Upload Release APK to GitHub Release
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: app/build/outputs/apk/release/app-release.apk
+        asset_name: app-release.apk
+        asset_content_type: application/vnd.android.package-archive
