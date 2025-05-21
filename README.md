@@ -1,7 +1,12 @@
 # Dependency Haven
 
-> [!NOTE]
-> This project has been deprecated, in favor of **[CodeOps Studio](https://github.com/euptron/CodeOps-Studio)**
+> [!WARNING]  
+> **This repository has been deprecated in favour of [CodeOps Studio](https://github.com/euptron/CodeOps-Studio)** – a mobile-based IDE with **enhanced dependency resolution**, code editing, debugging etc.  
+>  
+> **Why migrate?**  
+> - All dependency resolution features from this repo, are **integrated into a full IDE**.  
+>  
+> **[Get Started with CodeOps Studio](https://github.com/euptron/CodeOps-Studio#getting-started)**  
 
 Dependency Haven is a powerful and easy-to-use dependency management tool for java and Android projects. Simplify the management of your project dependencies with this open-source library.
 
